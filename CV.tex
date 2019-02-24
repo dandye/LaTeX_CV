@@ -1,0 +1,306 @@
+\documentclass{article}
+%\usepackage{fullpage}
+\usepackage[left=1in,right=1in,top=2cm,bottom=4cm]{geometry}
+\usepackage{xcolor}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\setlength{\parskip}{15pt}
+\setlength{\parindent}{25pt}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = blue,
+    urlcolor=blue
+}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{1.6cm}
+\rhead{\begin{tabular}{r}
+Daniel Dye\\
++1.813.235.4802\\
+\href{mailto:root@clevercrowconsulting.com}{root@clevercrowconsulting.com}
+\end{tabular}}
+\rfoot{\thepage}
+
+\newcommand{\myitem}[1]{\noindent{\bfseries #1}}
+\newcommand{\myitemL}[1]{\vspace{30pt}\par\noindent{\large\bfseries #1}}
+
+\newenvironment{mitemize}
+               {%
+                 \setlength{\parskip}{3pt}
+                 \setlength{\itemsep}{2.5pt plus 1pt}
+                 \begin{itemize}}
+               {\end{itemize}}
+               
+
+\begin{document}
+
+\section*{Roles and Skills}
+\begin{sloppypar}
+\myitem{Software Engineer:} Python, Interactive Data Language (IDL), Shell scripting (Bash, Make), Fortran, Perl, Node.js, C/C++
+
+\myitem{Full} Stack Web Developer: Python (Django, Flask), ORM (Django, SQLAlchemy, MongoEngine), Javascript/ES6, KnockoutJS, PHP, Perl, Databases (ANSI SQL, PostgreSQL/Netezza, SQL Server, MySQL, Oracle, MongoDB/DocumentDB, SQLite) 
+
+\myitem{DevOps Engineer:} Continuous Integration (TravisCI, TeamCity, Python fabric/paramiko), Configuration Management (Ansible, SaltStack), Build/Packaging (RPM build, Packer, Vagrant, Docker), Cloud Deployment (AWS, Rackspace/OpenStack)
+
+\myitem{Data Scientist:} Exploratory Data Analysis (Jupyter Notebooks, Python Pandas), Machine Learning (TensorFlow, SciKit Learn, R), Visualization (D3, bqplot, plotly, Matplotlib, Leaflet, MapBox), Reporting, Academic/Technical Writing
+
+\myitem{Development Methodologies:} Agile, Test Driven Development (TDD), Behavior Driven Development (BDD), GitFlow, JIRA
+
+\myitem{SCM:} Git, Mercurial, Subversion, GitHub Enterprise
+
+\myitem{Spatial Analysis:} ArcMap, Quantum GIS, Python (OGR/GDAL, Fiona, Shapely, Rasterio, etc.), R, GeoDa, FME/FME Server, PostGIS
+
+\myitem{Statistical Analysis:} Python, R, SAS, SPSS, PostgreSQL (PL/SQL, PL/R, PL/Python)
+\end{sloppypar}
+
+\section*{Education}
+
+\begin{center}
+  \renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|l|l|l|}
+  \hline
+  \begin{tabular}{@{}l@{}}
+    Graduate Certificate\\[-5pt]  
+    Predictive Analytics and Business Intelligence;\\[-5pt] SAS Certificate
+  \end{tabular}&
+  \begin{tabular}{@{}l@{}}
+    University of South Florida\\[-5pt]
+    Tampa, Florida
+  \end{tabular} &
+2015\\\hline 
+Fulbright Scholar &
+\begin{tabular}{@{}l@{}}
+  University of Helsinki and
+  Aalto University \\[-5pt]
+  Helsinki, Finland
+\end{tabular}&
+2007\\\hline
+Master of Arts - Geography&
+University of South Florida&
+2006\\\hline
+\begin{tabular}{@{}l@{}}
+  Graduate Certificate\\[-5pt]
+  Geographic Information Systems
+  \end{tabular}& 
+University of South Florida&
+2005\\\hline
+\begin{tabular}{@{}l@{}}
+  Bachelor of Science\\[-5pt]
+  Management Information Systems
+  \end{tabular}&
+University of South Florida&
+2003\\\hline
+\end{tabular}
+\end{center}
+
+\section*{Experience}
+
+\myitemL{NC4 Soltra}\hspace{\fill} November 2014--present
+
+\myitem{Senior Software Engineer}
+\begin{mitemize}
+\item Full Stack Web Development for Soltra Edge
+\begin{mitemize}
+  \item Django, jQuery/KnockoutJS, MongoDB/MongoEngine, Celery on CentOS
+\end{mitemize}
+\end{mitemize}
+
+\myitem{DevOps Engineer and Release Manager}
+\begin{mitemize}
+\item Maintainer and Release Manager for dozens of project RPMs
+\item RHEL/CentOS systems configuration and administration
+\begin{mitemize}
+  \item Configuration-as-code with Ansible and SaltStack
+  \item Center for Internet Security (CIS) benchmark conformance
+  \item Security auditing and remediation
+\end{mitemize}
+\item Dev/Prod parity improved using Vagrant, Packer, and Docker for Virtual Machine/Cloud Image creation and Ansible for configuration management
+\end{mitemize}
+
+\myitem{Team Leadership}
+\begin{mitemize}
+\item Developed curriculum for onboarding new engineers
+\item Established, socialized, and enforced coding guidelines and team norms
+\item Improved the feedback loop between Dev and QA teams resulting in higher quality with less rework
+\end{mitemize}
+
+\myitem{USF Water Institute} \hfill{December 2013--November 2014}
+
+\myitem{Database Team Lead}
+\begin{mitemize}
+\item SysAdmin for SQL Server cluster
+\begin{mitemize}
+  \item Managed dozens of databases
+  \item Complex query writing, stored procedures, and reporting
+\end{mitemize}
+\item Led database development team
+\begin{mitemize}
+  \item Interviewed, trained, and mentored student employees
+\end{mitemize}
+\item Refactored Stored Procedures and Extract, Transform, Load (ETL) workflows (140+ SSIS Packages); tracked with Git
+\item Implemented Django web application (OpenTreeMap, in beta)
+\item Led statistical analysis project using R and SQL Server
+\end{mitemize}
+
+\myitemL{Catalina Marketing}\hfill \begin{tabular}{c}April 2013--October 2013\\ (6-month contract)\end{tabular}
+
+\myitem{Python Web Developer (Back End)}
+\begin{mitemize}
+  \item Python Flask micro-framework with RabbitMQ and Celery
+  \item Netezza/Oracle/Postgres, SQLAlchemy Object Relational Model (ORM)
+  \item Agile Methodology
+  \item Continuous Integration (TeamCity) and Code Quality (PEP8, Unit Testing)
+\end{mitemize}
+
+\myitemL{WeoGeo} \hfill February 2007--November 2012
+
+\myitem{Interim Director of Professional Services}
+\begin{mitemize}
+\item Founded the Professional Services business unit
+\begin{mitemize}
+  \item Fortune 50/500 clients including Northrop Grumman, \href{https://www.businesswire.com/news/home/20100804005929/en/WeoGeo-Power-Pitney-Bowes-Business-Insight}{Pitney Bowes}, and DigitalGlobe  
+  \item Assessed customer needs for proposal development
+  \item Searched, evaluated, and implemented tool chains for:
+    \begin{mitemize}
+    \item Enterprise-scale Data Processing
+      \begin{mitemize}  
+      \item Custom Data Transformations with Python, FME, PostGIS
+      \end{mitemize}
+    \item Custom Web Cartography with ArcMap, TileMill, OpenLayers
+    \end{mitemize}
+  \item Created OGC compliant web services for client data
+\end{mitemize}
+\end{mitemize}
+
+\myitem{Sales Engineer}
+\begin{mitemize}
+\item Developed and delivered technical demonstrations to clients and investors
+\item Acted as technical point of contact for client interaction
+\item Conducted needs assessment interviews
+\item Developed proof-of-concept demonstrations
+\item Oversaw production workflow development and communicated progress to clients
+\end{mitemize}
+
+\myitem{Developer Advocate/Technology Evangelist}
+\begin{mitemize}
+\item Created developer documentation and narrative blog series to demonstrate usage
+\item Founded the \href{https://web.archive.org/web/20120717040750/http://www.weogeo.com/author/Dan%20Dye.html}{technical blog, Dwell Time}, which demonstrated:
+\begin{mitemize}
+  \item Creative, outside-the-box applications of technology
+  \item Utilization of WeoGeo SDK
+  \item Customer integrations which “primed the pump” for Professional Services
+\end{mitemize}
+\item Promoted platform at industry workshops, conferences, and trade shows (FOSS4G, Esri Dev Summit, PyCon, PyData, O’Reilly Strata, SciPy, etc.)
+\item Forged strategic alliances with respected industry leaders
+\item Created conference exhibit collateral, hardware, demonstration, and process for lead generation and follow up (interview forms, mail merge, sales funnels, etc.)
+\item Created a community platform in 2007 including WordPress Mu, phpb2b Forum, and MediaWiki on (LAMP - Linux, Apache, MySQL, PHP)
+\item Utilized social media to promote community platform, strategic partners, and services
+  \begin{mitemize}
+    \item @dandye is included in the Twitter Lists: Geospatial Influencers, GIS, Geospatial, geospatial, Geospatial Faves, geo, geo people, etc.
+  \end{mitemize}
+\end{mitemize}
+
+\myitemL{University of South Florida}\hfill August 2005--December 2006
+
+\myitem{Graduate Teaching/Research Assistant}
+\begin{mitemize}
+\item Graduate teaching assistant for Geography Department’s undergraduate Introduction to Remote Sensing course
+  \begin{mitemize}
+    \item Planned the curriculum and taught the associated lab
+    \item Selected software and text and negotiated purchase for lab (IDL/ENVI)
+\end{mitemize}
+\item Research and Thesis project involved monitoring and modeling water quality
+  \begin{mitemize}
+    \item Sponsored by Veolia Water and Tampa Bay Water)
+  \end{mitemize}
+\end{mitemize}
+
+\myitemL{Florida Environmental Research Institute}\hfill April 2001--June 2005
+
+\myitem{Research Assistant/Associate}
+\begin{mitemize}
+\item Performed Scientific Visualization and statistical analysis for Dr. W. Paul Bisset’s ecological/optical model of the West Florida Shelf (\href{https://www.researchgate.net/profile/W_Bissett/publication/239866967_Ecological_Simulation_EcoSim_20_Technical_Description/links/00b7d52aa2b91b0672000000.pdf}{EcoSim 2.0})
+  \begin{mitemize}
+    \item Co-author for several academic journal articles including \href{https://www.sciencedirect.com/journal/marine-chemistry}{the peer-reviewed journal, Marine Chemistry}  
+    \item Designed and programmed validation for EcoSim2 using satellite data (SeaWiFS) as ground truth
+  \end{mitemize}
+  \item Devised, programmed (in IDL), and executed data processing pipelines for Dr. David D.R. Kohler’s designs for the calibration, characterization, and processing of the \href{https://hico.coas.oregonstate.edu/publications/Davis%20PHILLS%20OpticsExpress.pdf}{Portable Hyperspectral Imager for Low Light Spectroscopy (PHILLS2)} data into reflectance and remote sensing products (Rrs, Chlorophyll, etc.)
+  \begin{mitemize}
+    \item Spatial and Spectral sensor calibration data collected in NRL’s optics lab
+    \item Radiometric correction, atmospheric correction, reflectance products
+    \item Implemented a Genetic Algorithm to solve for and remove effects of stray-light within the instrument (Dr. Kohler’s design)
+    \item Field work with the instrument aboard a NOAA Cessna Citation 
+    \item Prototyped direct parametric ortho correction of both pushbroom scanner and digital frame imagery using Trimble’s POSPac software and ReSe’s PARGE
+  \end{mitemize}
+  \item Processed raw satellite data (Level0) into georectified remote sensing reflectance (Rrs) and products (Chlorophyll, etc.) using Naval Research Laboratory’s Automated Processing System (APS) and the SeaWiFS Data Analysis System (SeaDAS)
+  \item Co-designed and programmed a web-based data selection, processing, and distribution application for hyperspectral data (HyDRO)
+  \begin{mitemize}
+    \item This project evolved into the startup WeoGeo
+  \end{mitemize}
+  \item System and Network Administration for the research institute’s Windows and Unix/Linux environment
+\end{mitemize}
+
+\section*{Conferences and Hackathons}
+\begin{mitemize}
+\item PyData Miami 2019, \href{https://conferences.oreilly.com/strata/strata2012/public/schedule/detail/23166}{Santa Clara 2012}, \ldots
+\item O'Reilly JupyterCon New York 2018
+  \begin{mitemize}
+  \item Code Sprint for JupyterLab
+  \end{mitemize}
+  \item Code for America Hackathon Tampa 2018
+  \item Harvard Personal Genome Project Hackathon Boston 2018
+  \item PyCon - Santa Clara 2012, Montreal 2014, \ldots
+  \item SciPy Austin 2012, 2013
+    \begin{mitemize}
+    \item on the Program Committee for the Geospatial Track in 2013
+    \end{mitemize}
+  \item Free and Open Source Software for Geospatial (FOSS4G))
+    \begin{mitemize}
+    \item Sydney 2009, Barcelona 2010, Denver 2011
+    \end{mitemize}  
+  \item American Association of Geographers (AAG)
+    \begin{mitemize}
+    \item Winner of poster competition in 2005
+    \end{mitemize}
+  \item O'Reilly Strata \href{https://conferences.oreilly.com/strata/strata2012}{Santa Clara 2012}
+    \begin{mitemize}
+    \item Exhibited my ``feelSpace Belt'' in the Mini-Maker Faire
+    \end{mitemize}   
+  \item Esri Dev Summit Palm Springs 3 years
+  \item Esri User Conference San Diego 3 years
+  \item AMP Camp 3, Big Data Bootcamp UC Berkeley 2013 
+  \item BarCamp and Ignite
+    \begin{mitemize}
+    \item Tampa, Sarasota 2011, Orlando, Portland,  \ldots
+    \end{mitemize}
+  \item Hillsborough County Hackathon 1st place in 2013 (1st place!), 2014
+  \item City of Tampa Hackathon
+    \begin{mitemize}
+    \item \href{https://web.archive.org/web/20120808120046/http://www.weogeo.com/blog/City_of_Tampa_Mayors_Hackathon.html}{Blog post on Wayback Machine}
+    \end{mitemize}
+  \item FME User Conference
+  \item ASPRS (Photogrammetry and Remote Sensing)
+  \item WhereCamp \href{https://conferences.oreilly.com/where/where2010/public/schedule/detail/14268}{Mountain View 2010}, Tampa Bay 2012
+  \item O'Reilly Where 2.0 2010
+  \item Google Developer Day 2010
+  \item Society for Optics and Photonics (SPIE)
+  \item GeoINT Symposium (4 years)
+  \item Ocean Sciences
+  \item \ldots many more
+\end{mitemize}
+
+\section*{Meetups and User Groups}
+\begin{mitemize}
+\item Tampa Bay Python User Group (co-organizer from 2008-2015)
+\item University of South Florida Python User Group (co-founded in 2006, now defunct)
+\item Tampa Bay Microcontroller Meetup (co-founded in 2008)
+\item Suncoast Developers Guild
+\item Suncoast Linux User Group
+\item \ldots many more
+\end{mitemize}
+  
+
+\end{document}
